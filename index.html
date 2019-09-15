@@ -15,86 +15,227 @@
 </head>
 
 <body>
-        <div class="jumbotron jumbotron-fluid">
-                <div class="container">
-                  <h1 class="display-4">Music Trivia</h1>
-                  <p class="lead">Test your knowledge. You have 90 seconds to answer the questions below. If you finish before the 90 seconds is done, click submit for your results.</p>
-                </div>
-              </div>
-    
-    <h2></h2>
-    <div id="timer"></div>
-    <form id="quiz" name = "quiz">
-        <p>Who was the lead singer of the band Culture Club?</p>
-        <input type = "radio" id= "mc" name="question1" value="Boy George">*Boy George<br>
-        <input type = "radio" id= "mc" name="question1" value="George Michael">George Michael<br>
-        <input type = "radio" id= "mc" name="question1" value="Elton John">Elton John<br>
-        <input type = "radio" id= "mc" name="question1" value="David Bowie">David Bowie<br>
-        <br>
-        <p>What country singer wrote Patsy Cline's hit song Crazy?</p>
-        <input type = "radio" id= "mc" name="question2" value="Glen Campbell">Glen Campbell<br>
-        <input type = "radio" id= "mc" name="question2" value="Johnny Cash">Johnny Cash<br>
-        <input type = "radio" id= "mc" name="question2" value="Willie Nelson">*Willie Nelson<br>
-        <input type = "radio" id= "mc" name="question2" value="June Carter Cash">June Carter Cash<br>
-        <br>
-        <p>Who rose to fame with the hit song I Kissed A Girl?</p>
-        <input type = "radio" id= "mc" name="question3" value="Gwen Stefani">Gwen Stefani<br>
-        <input type = "radio" id= "mc" name="question3" value="Katy Perry">*Katy Perry<br>
-        <input type = "radio" id= "mc" name="question3" value="Miley Cyrus">Miley Cyrus<br>
-        <input type = "radio" id= "mc" name="question3" value="Avril Lavigne">Avril Lavigne<br>
-        <br>
-        <p>What was the name of the first lead singer of AC/DC, who died in 1980 at the age of 33?</p>
-        <input type = "radio" id= "mc" name="question4" value="Jeff Hanneman">Jeff Hanneman<br>
-        <input type = "radio" id= "mc" name="question4" value="Bon Scott">*Bon Scott<br>
-        <input type = "radio" id= "mc" name="question4" value="Nick Menza">Nick Menza<br>
-        <input type = "radio" id= "mc" name="question4" value="Chuck Schuldiner">Chuck Schuldiner<br>
-        <br>
-        <p>What was Madonna’s first UK top ten single?</p>
-        <input type = "radio" id= "mc" name="question5" value="Like a Virgin">Like a Virgin<br>
-        <input type = "radio" id= "mc" name="question5" value="Holiday">*Holiday<br>
-        <input type = "radio" id= "mc" name="question5" value="Like a Prayer">Like a Prayer<br>
-        <input type = "radio" id= "mc" name="question5" value="Papa Don't Preach">Papa Don't Preach<br>
-        <br>
-        <p>Stewart Copeland was the drummer with which band?</p>
-        <input type = "radio" id= "mc" name="question6" value="The Cars">The Cars<br>
-        <input type = "radio" id= "mc" name="question6" value="The Police">*The Police<br>
-        <input type = "radio" id= "mc" name="question6" value="Talking Heads">Talking Heads<br>
-        <input type = "radio" id= "mc" name="question6" value="U2">U2<br>
-        <br>
-        <p>Which American rock’n’roll star caused controversy when he married a young teenager?</p>
-        <input type = "radio" id= "mc" name="question7" value="Johnny Cash">Johnny Cash<br>
-        <input type = "radio" id= "mc" name="question7" value="Elvis Presley">Elvis Presley<br>
-        <input type = "radio" id= "mc" name="question7" value="Ritchie Valen">Ritchie Valen<br>
-        <input type = "radio" id= "mc" name="question7" value="Jerry Lee Lewis">*Jerry Lee Lewis<br>
-        <br>
-        <p>What is the better known stage name of Robyn Fenty?</p>
-        <input type = "radio" id= "mc" name="question8" value="Rhianna">*Rhianna<br>
-        <input type = "radio" id= "mc" name="question8" value="Nicki Minaj">Nicki Minaj<br>
-        <input type = "radio" id= "mc" name="question8" value="Lady Gaga">Lady Gaga<br>
-        <input type = "radio" id= "mc" name="question8" value="Cardi B">Cardi B<br>
-        <br>
-        <p>Whose childhood hit was Fingertips?</p>
-        <input type = "radio" id= "mc" name="question9" value="Michael Jackson">Michael Jackson<br>
-        <input type = "radio" id= "mc" name="question9" value="Stevie Wonder">*Stevie Wonder<br>
-        <input type = "radio" id= "mc" name="question9" value="Aretha Franklin">Aretha Franklin<br>
-        <input type = "radio" id= "mc" name="question9" value="Jackson 5">Jackson 5<br>
-        <br>
-        <p>After hearing the 1982 Prince song "Little Red Corvette" on the radio, Stevie Nicks was inspired to collaborate with Prince to write and record a song based on the melody of the Prince song. Which 1983 Stevie Nicks song was created by this collaboration with Prince?</p>
-        <input type = "radio" id= "mc" name="question10" value="Rod Stewart">Rod Stewart<br>
-        <input type = "radio" id= "mc" name="question10" value="Tom Petty">Tom Petty<br>
-        <input type = "radio" id= "mc" name="question10" value="Bonnie Raitt">Bonnie Raitt<br>
-        <input type = "radio" id= "mc" name="question10" value="Stevie Nicks">*Stevie Nicks<br>
-        <br>
-    </form>
-    <br>
-    <input id="button" type= "button" value="submit" onclick="check();">
-    <div id="results">
-        <p id = "number-correct"></p>
-        <p id = "number-wrong"></p>
-        <p id = "not-answered"></p>
+    <div id="jumbotron" class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Music Trivia</h1>
+            <p class="lead">Test your knowledge. You have 90 seconds to answer the questions below. If you finish before
+                the 90 seconds is done, click submit for your results.</p>
+        </div>
     </div>
 
-        <script type="text/javascript" src="assets/javascript/app.js"></script>
+    <h2></h2>
+    <button id="timer" type="button" id="btn btn-secondary btn-lg"></button>
+    <div id="results">
+        <br>
+        <br>
+        <p id="number-correct"></p>
+        <p id="number-wrong"></p>
+        <p id="not-answered"></p>
+    </div>
+
+   <br>
+   <br>
+    <form id="quiz" name="quiz">
+        <p>Who was the lead singer of the band Culture Club?</p>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question1" id="inlineRadio1" value="Boy George">
+            <label class="form-check-label" for="inlineRadio1">Boy George</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question1" id="inlineRadio2" value="George Michael">
+            <label class="form-check-label" for="inlineRadio2">George Michael</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question1" id="inlineRadio3" value="Elton John">
+            <label class="form-check-label" for="inlineRadio3">Elton John</label>
+        </div>
+        <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="question1" id="inlineRadio3" value="David Bowie">
+                <label class="form-check-label" for="inlineRadio3">David Bowie</label>
+            </div>
+            <br>
+            <br>
+        <p>What country singer wrote Patsy Cline's hit song Crazy?</p>
+        <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="question2" id="inlineRadio1" value="Glen Campbell">
+                <label class="form-check-label" for="inlineRadio1">Glen Campbell</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="question2" id="inlineRadio2" value="Johnny Cash">
+                <label class="form-check-label" for="inlineRadio2">Johnny Cash</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="question2" id="inlineRadio3" value="Willie Nelson">
+                <label class="form-check-label" for="inlineRadio3">Willie Nelson</label>
+            </div>
+            <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question2" id="inlineRadio3" value="June Carter Cash">
+                    <label class="form-check-label" for="inlineRadio3">June Carter Cash</label>
+                </div>
+                <br>
+                <br>
+        <p>Who rose to fame with the hit song I Kissed A Girl?</p>
+        <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="question3" id="inlineRadio1" value="Gwen Stefani">
+                <label class="form-check-label" for="inlineRadio1">Gwen Stefani</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="question3" id="inlineRadio2" value="Katy Perry">
+                <label class="form-check-label" for="inlineRadio2">Katy Perry</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="question3" id="inlineRadio3" value="Miley Cyrus">
+                <label class="form-check-label" for="inlineRadio3">Miley Cyrus</label>
+            </div>
+            <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question3" id="inlineRadio3" value="Avril Lavigne">
+                    <label class="form-check-label" for="inlineRadio3">Avril Lavigne</label>
+                </div>
+                <br>
+                <br>
+        <p>What was the name of the first lead singer of AC/DC, who died in 1980 at the age of 33?</p>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question4" id="inlineRadio1" value="Jeff Hanneman">
+            <label class="form-check-label" for="inlineRadio1">Jeff Hanneman</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question4" id="inlineRadio2" value="Bon Scott">
+            <label class="form-check-label" for="inlineRadio2">Bon Scott</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question4" id="inlineRadio3" value="Nick Menza">
+            <label class="form-check-label" for="inlineRadio3">Nick Menza</label>
+        </div>
+        <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="question4" id="inlineRadio3" value="Chuck Schuldiner">
+                <label class="form-check-label" for="inlineRadio3">Chuck Schuldiner</label>
+            </div>
+            <br>
+            <br>
+        <p>What was Madonna’s first UK top ten single?</p>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question5" id="inlineRadio1" value="Like a Virgin">
+            <label class="form-check-label" for="inlineRadio1">Like a Virgin</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question5" id="inlineRadio2" value="Holiday">
+            <label class="form-check-label" for="inlineRadio2">Holiday</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question5" id="inlineRadio3" value="Like a Prayer">
+            <label class="form-check-label" for="inlineRadio3">Like a Prayer</label>
+        </div>
+        <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="question5" id="inlineRadio3" value="Papa Don't Preach">
+                <label class="form-check-label" for="inlineRadio3">Papa Don't Preach</label>
+            </div>
+            <br>
+            <br>
+        <p>Stewart Copeland was the drummer with which band?</p>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question6" id="inlineRadio1" value="The Cars">
+            <label class="form-check-label" for="inlineRadio1">The Cars</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question6" id="inlineRadio2" value="The Police">
+            <label class="form-check-label" for="inlineRadio2">The Police</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question6" id="inlineRadio3" value="Talking Heads">
+            <label class="form-check-label" for="inlineRadio3">Talking Heads</label>
+        </div>
+        <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="question6" id="inlineRadio3" value="U2">
+                <label class="form-check-label" for="inlineRadio3">U2</label>
+            </div>
+            <br>
+            <br>
+        <p>Which American rock’n’roll star caused controversy when he married a young teenager?</p>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question7" id="inlineRadio1" value="Johnny Cash">
+            <label class="form-check-label" for="inlineRadio1">Johnny Cash</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question7" id="inlineRadio2" value="Elvis Presley">
+            <label class="form-check-label" for="inlineRadio2">Elvis Presley</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question7" id="inlineRadio3" value="Ritchie Valen">
+            <label class="form-check-label" for="inlineRadio3">Ritchie Valen</label>
+        </div>
+        <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="question7" id="inlineRadio3" value="Jerry Lee Lewis">
+                <label class="form-check-label" for="inlineRadio3">Jerry Lee Lewis</label>
+            </div>
+            <br>
+            <br>
+        <p>What is the better known stage name of Robyn Fenty?</p>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question8" id="inlineRadio1" value="Rhianna">
+            <label class="form-check-label" for="inlineRadio1">Rhianna</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question8" id="inlineRadio2" value="Nicki Minaj">
+            <label class="form-check-label" for="inlineRadio2">Nicki Minaj</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question8" id="inlineRadio3" value="Lady Gaga">
+            <label class="form-check-label" for="inlineRadio3">Lady Gaga</label>
+        </div>
+        <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="question8" id="inlineRadio3" value="Cardi B">
+                <label class="form-check-label" for="inlineRadio3">Cardi B</label>
+            </div>
+            <br>
+            <br>
+        <p>Whose childhood hit was Fingertips?</p>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question9" id="inlineRadio1" value="Michael Jackson">
+            <label class="form-check-label" for="inlineRadio1">Michael Jackson</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question9" id="inlineRadio2" value="Aretha Franklin">
+            <label class="form-check-label" for="inlineRadio2">Aretha Franklin</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question9" id="inlineRadio3" value="Stevie Wonder">
+            <label class="form-check-label" for="inlineRadio3">Stevie Wonder</label>
+        </div>
+        <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="question9" id="inlineRadio3" value="Jackson 5">
+                <label class="form-check-label" for="inlineRadio3">Jackson 5</label>
+            </div>
+            <br>
+            <br>
+        <p>After hearing the 1982 Prince song "Little Red Corvette" on the radio, Stevie Nicks was inspired to
+            collaborate with Prince to write and record a song based on the melody of the Prince song. Which 1983 Stevie
+            Nicks song was created by this collaboration with Prince?</p>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="question10" id="inlineRadio1" value="Rod Stewart">
+                <label class="form-check-label" for="inlineRadio1">Rod Stewart</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="question10" id="inlineRadio2" value="Tom Petty">
+                <label class="form-check-label" for="inlineRadio2">Tom Petty</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="question10" id="inlineRadio3" value="Bonnie Raitt">
+                <label class="form-check-label" for="inlineRadio3">Bonnie Raitt</label>
+            </div>
+            <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question10" id="inlineRadio3" value="Stevie Nicks">
+                    <label class="form-check-label" for="inlineRadio3">Stevie Nicks</label>
+                </div>
+                <br>
+                <br>
+    </form>
+    <br>
+    <input id="button" type="button" value="submit" onclick="check();">
+    
+    
+    <div id="footer" type="card-footer bg-transparent border-success">Trivia Game by Sara Sullivan</div>
+    </div>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
 
 </html>

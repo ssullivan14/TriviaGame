@@ -2,53 +2,18 @@
     visibility: hidden;
 }
 
-
-.first {
+#footer {
     text-align: center;
-    
+    background-color: #888888;
+    font-size: 8pt;
+    padding-top: 20px;
 }
 
-.second {
-    text-align: center;
-    
-}
-
-.third {
-    text-align: center;
-}
-
-.fourth {
-    text-align: center;
-}
-
-.fifth {
-    text-align: center;
-}
-
-.sixth {
-    text-align: center;
-}
-
-.seventh {
-    text-align: center;
-}
-
-.eigth {
-    text-align: center;
-}
-
-.ninth {
-    text-align: center;
-}
-
-.tenth {
+#jumbotron {
+    background-color: #8f5a5a;
     text-align: center;
 }
 
 body {
-    background-image: url ("https://media2.s-nbcnews.com/j/newscms/2019_09/2769481/190228-headphones-music-se-152p_58f8d656ad9189f6b00167ef83c350c3.fit-760w.jpg");
-}
-
-#timer {
     text-align: center;
 }

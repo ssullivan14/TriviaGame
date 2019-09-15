@@ -82,6 +82,17 @@ function check() {
     document.getElementById("number-wrong").innerHTML = "Number Wrong: " + incorrect + "";
    
 }
-   
+
+    let timeleft = 30;
+    let downloadTimer = setInterval(function(){
+    document.getElementById("timer").innerHTML = timeleft + " seconds remaining";
+    timeleft -= 1;
+    if(timeleft <= 0){
+        clearInterval(downloadTimer);
+        document.getElementById("timer").innerHTML = "Times Up!"
+    }
+    }, 1000);
+
+
    
   
