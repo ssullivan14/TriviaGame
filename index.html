@@ -15,10 +15,84 @@
 </head>
 
 <body>
+        <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                  <h1 class="display-4">Music Trivia</h1>
+                  <p class="lead">Test your knowledge. You have 90 seconds to answer the questions below. If you finish before the 90 seconds is done, click submit for your results.</p>
+                </div>
+              </div>
+    
     <h2></h2>
-    <div id="quiz"></div>
-    <button id="submit">Submit</button>
-    <div id="results"></div>
+    <div id="timer"></div>
+    <form id="quiz" name = "quiz">
+        <p>Who was the lead singer of the band Culture Club?</p>
+        <input type = "radio" id= "mc" name="question1" value="Boy George">*Boy George<br>
+        <input type = "radio" id= "mc" name="question1" value="George Michael">George Michael<br>
+        <input type = "radio" id= "mc" name="question1" value="Elton John">Elton John<br>
+        <input type = "radio" id= "mc" name="question1" value="David Bowie">David Bowie<br>
+        <br>
+        <p>What country singer wrote Patsy Cline's hit song Crazy?</p>
+        <input type = "radio" id= "mc" name="question2" value="Glen Campbell">Glen Campbell<br>
+        <input type = "radio" id= "mc" name="question2" value="Johnny Cash">Johnny Cash<br>
+        <input type = "radio" id= "mc" name="question2" value="Willie Nelson">*Willie Nelson<br>
+        <input type = "radio" id= "mc" name="question2" value="June Carter Cash">June Carter Cash<br>
+        <br>
+        <p>Who rose to fame with the hit song I Kissed A Girl?</p>
+        <input type = "radio" id= "mc" name="question3" value="Gwen Stefani">Gwen Stefani<br>
+        <input type = "radio" id= "mc" name="question3" value="Katy Perry">*Katy Perry<br>
+        <input type = "radio" id= "mc" name="question3" value="Miley Cyrus">Miley Cyrus<br>
+        <input type = "radio" id= "mc" name="question3" value="Avril Lavigne">Avril Lavigne<br>
+        <br>
+        <p>What was the name of the first lead singer of AC/DC, who died in 1980 at the age of 33?</p>
+        <input type = "radio" id= "mc" name="question4" value="Jeff Hanneman">Jeff Hanneman<br>
+        <input type = "radio" id= "mc" name="question4" value="Bon Scott">*Bon Scott<br>
+        <input type = "radio" id= "mc" name="question4" value="Nick Menza">Nick Menza<br>
+        <input type = "radio" id= "mc" name="question4" value="Chuck Schuldiner">Chuck Schuldiner<br>
+        <br>
+        <p>What was Madonna’s first UK top ten single?</p>
+        <input type = "radio" id= "mc" name="question5" value="Like a Virgin">Like a Virgin<br>
+        <input type = "radio" id= "mc" name="question5" value="Holiday">*Holiday<br>
+        <input type = "radio" id= "mc" name="question5" value="Like a Prayer">Like a Prayer<br>
+        <input type = "radio" id= "mc" name="question5" value="Papa Don't Preach">Papa Don't Preach<br>
+        <br>
+        <p>Stewart Copeland was the drummer with which band?</p>
+        <input type = "radio" id= "mc" name="question6" value="The Cars">The Cars<br>
+        <input type = "radio" id= "mc" name="question6" value="The Police">*The Police<br>
+        <input type = "radio" id= "mc" name="question6" value="Talking Heads">Talking Heads<br>
+        <input type = "radio" id= "mc" name="question6" value="U2">U2<br>
+        <br>
+        <p>Which American rock’n’roll star caused controversy when he married a young teenager?</p>
+        <input type = "radio" id= "mc" name="question7" value="Johnny Cash">Johnny Cash<br>
+        <input type = "radio" id= "mc" name="question7" value="Elvis Presley">Elvis Presley<br>
+        <input type = "radio" id= "mc" name="question7" value="Ritchie Valen">Ritchie Valen<br>
+        <input type = "radio" id= "mc" name="question7" value="Jerry Lee Lewis">*Jerry Lee Lewis<br>
+        <br>
+        <p>What is the better known stage name of Robyn Fenty?</p>
+        <input type = "radio" id= "mc" name="question8" value="Rhianna">*Rhianna<br>
+        <input type = "radio" id= "mc" name="question8" value="Nicki Minaj">Nicki Minaj<br>
+        <input type = "radio" id= "mc" name="question8" value="Lady Gaga">Lady Gaga<br>
+        <input type = "radio" id= "mc" name="question8" value="Cardi B">Cardi B<br>
+        <br>
+        <p>Whose childhood hit was Fingertips?</p>
+        <input type = "radio" id= "mc" name="question9" value="Michael Jackson">Michael Jackson<br>
+        <input type = "radio" id= "mc" name="question9" value="Stevie Wonder">*Stevie Wonder<br>
+        <input type = "radio" id= "mc" name="question9" value="Aretha Franklin">Aretha Franklin<br>
+        <input type = "radio" id= "mc" name="question9" value="Jackson 5">Jackson 5<br>
+        <br>
+        <p>After hearing the 1982 Prince song "Little Red Corvette" on the radio, Stevie Nicks was inspired to collaborate with Prince to write and record a song based on the melody of the Prince song. Which 1983 Stevie Nicks song was created by this collaboration with Prince?</p>
+        <input type = "radio" id= "mc" name="question10" value="Rod Stewart">Rod Stewart<br>
+        <input type = "radio" id= "mc" name="question10" value="Tom Petty">Tom Petty<br>
+        <input type = "radio" id= "mc" name="question10" value="Bonnie Raitt">Bonnie Raitt<br>
+        <input type = "radio" id= "mc" name="question10" value="Stevie Nicks">*Stevie Nicks<br>
+        <br>
+    </form>
+    <br>
+    <input id="button" type= "button" value="submit" onclick="check();">
+    <div id="results">
+        <p id = "number-correct"></p>
+        <p id = "number-wrong"></p>
+        <p id = "not-answered"></p>
+    </div>
 
         <script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>

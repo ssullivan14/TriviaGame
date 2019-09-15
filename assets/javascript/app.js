@@ -1,124 +1,61 @@
-//timer starts onload
-setTimeout(timeUp, 1000 * 10);
+function check() {
+    let question1 = document.quiz.question1.value;
+    let question2 = document.quiz.question2.value;
+    let question3 = document.quiz.question3.value;
+    let question4 = document.quiz.question4.value;
+    let question5 = document.quiz.question5.value;
+    let question6 = document.quiz.question6.value;
+    let question7 = document.quiz.question7.value;
+    let question8 = document.quiz.question8.value;
+    let question9 = document.quiz.question9.value;
+    let question10 = document.quiz.question10.value;
+    let correct = 0;
+    let incorrect = 0;
+    let unAnswered = none;
 
+        if (question1 === "Boy George") {
+            correct++;
+        }
+        else if (question1 !== "Boy George") {
+            incorrect++;
+        }
 
-function timeUp() {
-    // in the element with an id of time-left add an h2 saying Time's Up!
-    // console log done
-    console.log("done");
-    $("#timer").append("<h2>Time's Up!</h2>");
-    console.log("time is up");
+        if (question2 === "Willie Nelson") {
+            correct++;
+        }
+        if (question3 === "Katy Perry") {
+            correct++;
+        }
+        if (question4 === "Bon Scott") {
+            correct++;
+        }
+        if (question5 === "Holiday") {
+            correct++;
+        }
+        if (question6 === "The Police") {
+            correct++;
+        }
+        if (question7 === "Jerry Lee Lewis") {
+            correct++;
+        }
+        if (question8 === "Rhianna") {
+            correct++;
+        }
+        if (question9 === "Stevie Wonder") {
+            correct++;
+        }
+        if (question10 === "Stevie Nicks") {
+            correct++;
+        }
 
-};
-
-//variable with myQuestions that will need to be pushed to HTML
-let myQuestions = [{
-        question: "Who was the lead singer of the band Culture Club?",
-        answers: {
-            a: 'Boy George',
-            b: 'George Michael',
-            c: 'Elton John',
-            d: 'David Bowie'
-        },
-        correctAnswer: "a"
-    },
-    {
-        question: "What country singer wrote Patsy Cline's hit song Crazy?",
-        answers: {
-            a: 'Glen Campbell',
-            b: 'Johnny Cash',
-            c: 'Willie Nelson',
-            d: 'June Carter Cash'
-        },
-        correctAnswer: "c"
-    },
-
-    {
-        question: "Who rose to fame with the hit song I Kissed A Girl?",
-        answers: {
-            a: "Gwen Stefani",
-            b: "Katy Perry",
-            c: "Miley Cyrus",
-            d: "Avril Lavigne"
-        },
-        correctAnswer: "b"
-    },
-    {
-        question: "What was the name of the first lead singer of AC/DC, who died in 1980 at the age of 33?",
-        answers: {
-            a: "Jeff Hanneman",
-            b: "Bon Scott",
-            c: "Nick Menza",
-            d: "Chuck Schuldiner"
-        },
-        correctAnswer: "b"
-    },
-    {
-        question: "What was Madonna’s first UK top ten single?",
-        answers: {
-            a: "Like a Virgin",
-            b: "Holiday",
-            c: "Papa Don't Preach",
-            d: "Like a Prayer"
-        },
-        correctAnswer: "b"
-    },
-    {
-        question: "Stewart Copeland was the drummer with which band?",
-        answers: {
-            a: "The Cars",
-            b: "The Police",
-            c: "Talking Heads",
-            d: "U2"
-        },
-        correctAnswer: "b"
-    },
-    {
-        question: "Which American rock’n’roll star caused controversy when he married a young teenager?",
-        answers: {
-            a: "Johnny Cash",
-            b: "Elvis Presley",
-            c: "Ritchie Valen",
-            d: "Jerry Lee Lewis"
-        },
-        correctAnswer: "d"
-    },
-    {
-        question: "What is the better known stage name of Robyn Fenty?",
-        answers: {
-            a: "Rhianna",
-            b: "Lady Gaga",
-            c: "Cardi B",
-            d: "Nicki Minaj"
-        },
-        correctAnswer: "a"
-    },
-    {
-        question: "Whose childhood hit was Fingertips?",
-        answers: {
-            a: "Michael Jackson",
-            b: "Stevie Wonder",
-            c: "Aretha Franklin",
-            d: "Jackson 5"
-        },
-        correctAnswer: "b"
-    },
-];
-
-//variables where questions, answers, results get the div in html
-
-//generate quiz
-
-// You'll create a trivia form with multiple choice or true/false options (your choice).
-//function startGame () { 
-// The player will have a limited amount of time to finish the quiz. 
-
-
-
-
-
-// The game ends when the time runs out. The page will reveal the number of questions that players answer correctly and incorrectly.
-
-
-// Don't let the player pick more than one answer per question.
-// Don't forget to include a countdown timer.
+    
+    
+    
+    document.getElementById("results").style.visibility = "visible";
+    document.getElementById("number-correct").innerHTML = "Number Correct: " + correct + "";
+    document.getElementById("number-wrong").innerHTML = "Number Wrong: " + incorrect + "";
+    document.getElementById("not-answered").innerHTML = "Number Unanswered: " + unAnswered + "";
+}
+   
+   
+  
