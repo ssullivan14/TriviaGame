@@ -11,41 +11,67 @@ function check() {
     let question10 = document.quiz.question10.value;
     let correct = 0;
     let incorrect = 0;
-    let unAnswered = none;
+
 
         if (question1 === "Boy George") {
             correct++;
         }
-        else if (question1 !== "Boy George") {
+        else if(question1 !== "Boy George") {
             incorrect++;
         }
-
         if (question2 === "Willie Nelson") {
             correct++;
+        }
+        else if (question2 !== "Willie Nelson") {
+            incorrect++;
         }
         if (question3 === "Katy Perry") {
             correct++;
         }
+        else if (question3 !== "Katy Perry") {
+            incorrect++;
+        }
         if (question4 === "Bon Scott") {
             correct++;
+        }
+        else if (question4 !== "Bon Scott") {
+            incorrect++;
         }
         if (question5 === "Holiday") {
             correct++;
         }
+        else if (question5 !== "Holiday") {
+            incorrect++;
+        }
         if (question6 === "The Police") {
             correct++;
+        }
+        else if (question6 !== "The Police") {
+            incorrect++;
         }
         if (question7 === "Jerry Lee Lewis") {
             correct++;
         }
+        else if (question7 !== "Jerry Lee Lewis") {
+            incorrect++;
+        }
         if (question8 === "Rhianna") {
             correct++;
+        }
+        else if (question8 !== "Rhianna") {
+            incorrect++;
         }
         if (question9 === "Stevie Wonder") {
             correct++;
         }
+        else if (question9 !== "Stevie Wonder") {
+            incorrect++;
+        }
         if (question10 === "Stevie Nicks") {
             correct++;
+        }
+        else if (question10 !== "Stevie Nicks") {
+            incorrect++;
         }
 
     
@@ -54,7 +80,7 @@ function check() {
     document.getElementById("results").style.visibility = "visible";
     document.getElementById("number-correct").innerHTML = "Number Correct: " + correct + "";
     document.getElementById("number-wrong").innerHTML = "Number Wrong: " + incorrect + "";
-    document.getElementById("not-answered").innerHTML = "Number Unanswered: " + unAnswered + "";
+   
 }
    
    
